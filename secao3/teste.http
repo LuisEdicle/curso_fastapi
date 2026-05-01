@@ -4,5 +4,31 @@
 GET {{baseUrl}}/cursos
 
 ### Buscar curso por ID
-GET {{baseUrl}}/cursos/1
+GET {{baseUrl}}/cursos/3
+
+### POST um curso.
+POST {{baseUrl}}/cursos
+Content-Type: application/json
+
+{
+    "titulo": "Programação para kicks",
+    "aulas": 55,
+    "horas": 150
+}
+
+
+### PUT um curso
+PUT {{baseUrl}}/cursos/1
+Content-Type: application/json
+
+{
+  "titulo": "Programação em python versão II",
+  "aulas": 5,
+  "horas": 50
+}
+
+### Deletar curso por ID
+DELETE {{baseUrl}}/cursos/1
+
+
 
